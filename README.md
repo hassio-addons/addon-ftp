@@ -282,7 +282,7 @@ Got questions?
 You have several options to get them answered:
 
 - The Home Assistant [Community Forum][forum], we have a
-  [dedicated topic][forum] on that forum regarding this repository.
+  [dedicated topic][forum] on that forum regarding this add-on.
 - The Home Assistant [Discord Chat Server][discord] for general Home Assistant
   discussions and questions.
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
