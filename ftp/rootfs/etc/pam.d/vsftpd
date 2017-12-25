@@ -1,0 +1,3 @@
+#%PAM-1.0
+auth    required pam_pwdfile.so pwdfile=/etc/vsftpd/passwd
+account required pam_permit.so

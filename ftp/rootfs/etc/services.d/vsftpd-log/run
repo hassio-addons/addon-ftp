@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: FTP
+# Catches output from vsFTPd server
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+touch /var/log/vsftpd.log
+tail -n0 -F /var/log/vsftpd.log
