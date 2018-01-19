@@ -11,6 +11,8 @@ No unreleased changes yet.
 
 ## [v0.2.0] (2018-01-19)
 
+[Full Changelog][v0.1.0-v0.2.0]
+
 ### Changed
 
 - Upgrades add-on base image to v1.3.2
