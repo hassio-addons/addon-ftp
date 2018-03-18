@@ -386,7 +386,7 @@ SOFTWARE.
 [patreon]: https://www.patreon.com/frenck
 [paypal-shield]: https://img.shields.io/badge/donate-paypal-blue.svg
 [paypal]: https://www.paypal.me/FranckNijhof
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[project-stage-shield]: hhttps://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-ftp.svg
 [releases]: https://github.com/hassio-addons/addon-ftp/releases
