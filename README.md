@@ -6,7 +6,6 @@
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]](LICENSE.md)
 
-[![CircleCI][circleci-shield]][circleci]
 [![Bountysource][bountysource-shield]][bountysource]
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
@@ -358,8 +357,6 @@ SOFTWARE.
 [bitcoin]: https://blockchain.info/payment_request?address=3GVzgN6NpVtfXnyg5dQnaujtqVTEDBCtAH
 [bountysource-shield]: https://img.shields.io/bountysource/team/hassio-addons/activity.svg
 [bountysource]: https://www.bountysource.com/teams/hassio-addons/issues
-[circleci-shield]: https://img.shields.io/circleci/project/github/hassio-addons/addon-ftp.svg
-[circleci]: https://circleci.com/gh/hassio-addons/addon-ftp
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-ftp.svg
 [commits]: https://github.com/hassio-addons/addon-ftp/commits/master
 [contributors]: https://github.com/hassio-addons/addon-ftp/graphs/contributors
