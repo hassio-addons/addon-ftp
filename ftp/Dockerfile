@@ -1,13 +1,15 @@
 ARG BUILD_FROM=hassioaddons/base-amd64:1.3.3
+# hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Setup base
+# hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc \
-        linux-pam-dev \
-        make \
-        musl-dev \
+        gcc=6.4.0-r5 \
+        linux-pam-dev=1.3.0-r0 \
+        make=4.2.1-r0 \
+        musl-dev=1.1.18-r3 \
     \
     && cd /tmp \
     && curl -sSL https://github.com/tiwe-de/libpam-pwdfile/archive/v1.0.tar.gz \
@@ -17,8 +19,8 @@ RUN \
     && cd - \
     \
     && apk add --no-cache \
-        openssl \
-        vsftpd \
+        openssl=1.0.2o-r0 \
+        vsftpd=3.0.3-r4 \
     \
     && apk del --purge .build-dependencies \
     \
