@@ -18,6 +18,7 @@
   "privileged": [
     "SYS_ADMIN"
   ],
+  "apparmor": false,
   "map": [
     "addons:rw",
     "backup:rw",
