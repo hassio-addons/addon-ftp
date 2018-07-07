@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=6.4.0-r5 \
+        gcc=6.4.0-r8 \
         linux-pam-dev=1.3.0-r0 \
         make=4.2.1-r0 \
         musl-dev=1.1.18-r3 \
