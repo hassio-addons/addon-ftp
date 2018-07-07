@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base-amd64:1.4.2
+ARG BUILD_FROM=hassioaddons/base:2.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -34,7 +34,7 @@ RUN \
 
  # Copy root filesystem
 COPY rootfs /
-   
+
 # Build arugments
 ARG BUILD_ARCH
 ARG BUILD_DATE
