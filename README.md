@@ -219,9 +219,13 @@ The username the user needs to use to login to the FTP server. A valid username
 has a maximum of 32 characters, contains only `A-Z` and `0-9`.
 Usernames may contain a hyphen (`-`) but must not start or end with one.
 
+**Note**: _This option support secrets, e.g., `!secret ftp_username`._
+
 #### Sub-option: `password`
 
 The password the user logs in with.
+
+**Note**: _This option support secrets, e.g., `!secret ftp_password`._
 
 #### Sub-option: `allow_chmod`
 
