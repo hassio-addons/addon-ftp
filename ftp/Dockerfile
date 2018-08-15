@@ -3,7 +3,7 @@ ARG BUILD_FROM=hassioaddons/base:2.1.1
 FROM ${BUILD_FROM}
 
 # Set shell
-SHELL ["/bin/ash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 # hadolint ignore=DL3003
