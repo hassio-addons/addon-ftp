@@ -84,7 +84,8 @@
         "share": "bool",
         "ssl": "bool"
       }
-    ]
+    ],
+    "i_like_to_be_pwned": "bool?"
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"

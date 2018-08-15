@@ -38,6 +38,13 @@ for user in $(hass.config.get 'users|keys[]'); do
         echo 'dirlist_enable=YES' >> "/etc/vsftpd/users/${username}"
     fi
 
+    # Require a secure password
+    if hass.config.has_value "users[${user}].password" \
+        && ! hass.config.is_safe_password "users[${user}].password"; then
+        hass.die \
+          "Please choose a different pass for ${username}, this one is unsafe!"
+    fi
+
     password=$(hass.config.get "users[${user}].password" | openssl passwd -1 -stdin)
     echo "${username}:${password}" >> /etc/vsftpd/passwd
 done

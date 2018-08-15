@@ -266,6 +266,14 @@ Allow the user to access the `/share` directory.
 
 Allow the user to access the `/ssl` directory.
 
+### Option: `i_like_to_be_pwned`
+
+Adding this option to the add-on configuration allows to you bypass the
+HaveIBeenPwned password requirement by setting it to `true`.
+
+**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
+using this option! USE AT YOUR OWN RISK!_
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
