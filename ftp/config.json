@@ -73,7 +73,7 @@
     "max_clients": "int",
     "users": [
       {
-        "username": "match(^[a-zA-Z0-9\\d](?:[a-zA-Z0-9\\d]|-(?=[a-zA-Z0-9\\d])){0,32}$)",
+        "username": "str",
         "password": "str",
         "allow_chmod": "bool",
         "allow_download": "bool",
