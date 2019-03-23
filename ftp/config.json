@@ -28,7 +28,6 @@
     "ssl:rw"
   ],
   "options": {
-    "log_level": "info",
     "port": 21,
     "data_port": 20,
     "banner": "Welcome to the Hass.io FTP service.",
@@ -58,7 +57,7 @@
     ]
   },
   "schema": {
-    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
     "port": "port",
     "data_port": "port",
     "banner": "str",
