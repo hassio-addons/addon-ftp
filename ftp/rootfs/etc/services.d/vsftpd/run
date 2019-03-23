@@ -1,13 +1,12 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: FTP
 # Runs vsftpd (IPv4)
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
 # Wait for vsftpd-log to be started
 s6-svwait -u -t 5000 /var/run/s6/services/vsftpd-log
+
+bashio::log.info "Starting FTP server..."
 
 # RUN vsftpd
 exec vsftpd /etc/vsftpd/vsftpd.conf

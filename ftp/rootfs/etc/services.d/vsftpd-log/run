@@ -1,10 +1,8 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: FTP
 # Catches output from vsFTPd server
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
+bashio::log.info "Starting Log tailer..."
 touch /var/log/vsftpd.log
 tail -n0 -F /var/log/vsftpd.log
