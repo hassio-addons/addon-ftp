@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=8.2.0-r2 \
+        gcc=8.3.0-r0 \
         linux-pam-dev=1.3.0-r0 \
         make=4.2.1-r2 \
         musl-dev=1.1.20-r4 \
