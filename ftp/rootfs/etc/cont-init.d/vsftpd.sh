@@ -5,6 +5,8 @@
 # ==============================================================================
 readonly CONFIG=/etc/vsftpd/vsftpd.conf
 
+bashio::config.require.ssl
+
 # Configure ports
 {
     echo "listen_port=$(bashio::config 'port')"
