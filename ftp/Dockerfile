@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         gcc=8.3.0-r0 \
-        linux-pam-dev=1.3.0-r0 \
+        linux-pam-dev=1.3.0-r1 \
         make=4.2.1-r2 \
         musl-dev=1.1.20-r4 \
     \
