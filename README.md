@@ -206,7 +206,7 @@ The password the user logs in with.
 
 **Note**: _This option support secrets, e.g., `!secret ftp_password`._
 
-#### Sub-option: `allow_chmod``
+#### Sub-option: `allow_chmod`
 
 Setting this option to `true` will allow the use of the `SITE CHMOD` command for
 that user.
