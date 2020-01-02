@@ -42,13 +42,9 @@ access to your Home Assistant configuration via FTP.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-1. Install the "FTP" add-on.
+1. Search for the "FTP" add-on in the Hass.io add-on store and install it.
 1. Start the "FTP" add-on
 1. Check the logs of the "FTP" add-on to see if everything went well.
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
