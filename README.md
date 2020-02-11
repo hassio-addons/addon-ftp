@@ -52,50 +52,43 @@ comparison to installing any other Hass.io add-on.
 
 Example add-on configuration:
 
-```json
-{
-  "log_level": "info",
-  "port": 21,
-  "data_port": 20,
-  "banner": "Welcome to the Hass.io FTP service.",
-  "pasv": true,
-  "pasv_min_port": 30000,
-  "pasv_max_port": 30010,
-  "pasv_address": "",
-  "ssl": false,
-  "certfile": "fullchain.pem",
-  "keyfile": "privkey.pem",
-  "implicit_ssl": false,
-  "max_clients": 5,
-  "users": [
-    {
-      "username": "hassio",
-      "password": "changeme",
-      "allow_chmod": true,
-      "allow_download": true,
-      "allow_upload": true,
-      "allow_dirlist": true,
-      "addons": false,
-      "backup": true,
-      "config": true,
-      "share": true,
-      "ssl": false
-    },
-    {
-      "username": "camera",
-      "password": "changeme",
-      "allow_chmod": false,
-      "allow_download": false,
-      "allow_upload": true,
-      "allow_dirlist": true,
-      "addons": false,
-      "backup": false,
-      "config": false,
-      "share": true,
-      "ssl": false
-    }
-  ]
-}
+```yaml
+log_level: info
+port: 21
+data_port: 20
+banner: Welcome to the Hass.io FTP service.
+pasv: true
+pasv_min_port: 30000
+pasv_max_port: 30010
+pasv_address: ''
+ssl: false
+certfile: fullchain.pem
+keyfile: privkey.pem
+implicit_ssl: false
+max_clients: 5
+users:
+  - username: hassio
+    password: changeme
+    allow_chmod: true
+    allow_download: true
+    allow_upload: true
+    allow_dirlist: true
+    addons: false
+    backup: true
+    config: true
+    share: true
+    ssl: false
+  - username: camera
+    password: changeme
+    allow_chmod: false
+    allow_download: false
+    allow_upload: true
+    allow_dirlist: true
+    addons: false
+    backup: false
+    config: false
+    share: true
+    ssl: false
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
