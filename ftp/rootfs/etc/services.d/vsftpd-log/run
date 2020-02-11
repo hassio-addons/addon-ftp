@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: FTP
+# Community Home Assistant Add-on: FTP
 # Catches output from vsFTPd server
 # ==============================================================================
 bashio::log.info "Starting Log tailer..."

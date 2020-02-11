@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: FTP
+# Community Home Assistant Add-on: FTP
 # Runs vsftpd (IPv4)
 # ==============================================================================
 # Wait for vsftpd-log to be started

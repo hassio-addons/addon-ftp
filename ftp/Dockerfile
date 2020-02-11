@@ -47,12 +47,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="FTP" \
-    io.hass.description="A secure and fast FTP server for Hass.io" \
+    io.hass.description="A secure and fast FTP server for Home Assistant" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Franck Nijhof <frenck@addons.community>" \
-    org.label-schema.description="A secure and fast FTP server for Hass.io" \
+    org.label-schema.description="A secure and fast FTP server for Home Assistant" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="FTP" \
     org.label-schema.schema-version="1.0" \
@@ -60,4 +60,4 @@ LABEL \
     org.label-schema.usage="https://github.com/hassio-addons/addon-ftp/tree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-ftp" \
-    org.label-schema.vendor="Community Hass.io Add-ons"
+    org.label-schema.vendor="Community Home Assistant Add-ons"

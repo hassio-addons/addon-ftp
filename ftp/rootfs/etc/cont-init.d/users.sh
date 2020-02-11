@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: FTP
+# Community Home Assistant Add-on: FTP
 # Configures vsftpd
 # ==============================================================================
 declare username
