@@ -1,6 +1,6 @@
 ---
 repository:
-  description: "FTP - Community Home Assistant Add-ons"
+  description: "FTP - Home Assistant Community Add-ons"
   homepage: https://addons.community
   topics: ftp, ftp-server, addon, addons, home-assistant, homeassistant
   private: false
