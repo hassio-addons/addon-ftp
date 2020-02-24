@@ -25,7 +25,7 @@ RUN \
         openssl=1.1.1d-r3 \
         vsftpd=3.0.3-r6 \
     \
-    && apk del --purge .build-dependencies \
+    && apk del --no-cache --purge .build-dependencies \
     \
     && mkdir -p \
         /ftproot/empty \
