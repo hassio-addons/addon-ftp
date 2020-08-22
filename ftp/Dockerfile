@@ -12,7 +12,7 @@ RUN \
         gcc=9.3.0-r2 \
         linux-pam-dev=1.3.1-r4 \
         make=4.3-r0 \
-        musl-dev=1.1.24-r2 \
+        musl-dev=1.1.24-r9 \
     \
     && cd /tmp \
     && curl -sSL https://github.com/tiwe-de/libpam-pwdfile/archive/v1.0.tar.gz \
