@@ -14,7 +14,14 @@
   "host_network": true,
   "privileged": ["SYS_ADMIN"],
   "apparmor": false,
-  "map": ["addons:rw", "backup:rw", "config:rw", "share:rw", "ssl:rw"],
+  "map": [
+    "addons:rw",
+    "backup:rw",
+    "config:rw",
+    "media:rw",
+    "share:rw",
+    "ssl:rw"
+  ],
   "options": {
     "port": 21,
     "data_port": 20,
@@ -39,6 +46,7 @@
         "addons": false,
         "backup": false,
         "config": false,
+        "media": true,
         "share": true,
         "ssl": false
       }
@@ -69,6 +77,7 @@
         "addons": "bool",
         "backup": "bool",
         "config": "bool",
+        "media": "bool",
         "share": "bool",
         "ssl": "bool"
       }

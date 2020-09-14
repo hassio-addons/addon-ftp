@@ -12,7 +12,7 @@ for user in $(bashio::config 'users|keys'); do
     mkdir -p "/ftproot/users/${username}"
     touch "/etc/vsftpd/users/${username}"
 
-    for dir in "addons" "backup" "config" "share" "ssl"; do
+    for dir in "addons" "backup" "config" "media" "share" "ssl"; do
         if bashio::config.true "users[${user}].${dir}"; then
             mkdir "/ftproot/users/${username}/${dir}"
             mount --bind "/${dir}" "/ftproot/users/${username}/${dir}"
