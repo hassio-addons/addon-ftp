@@ -25,6 +25,10 @@ if bashio::config.true 'pasv'; then
     if bashio::config.has_value 'pasv_address'; then
         echo "pasv_address=$(bashio::config 'pasv_address')" >> "${CONFIG}"
     fi
+
+    if bashio::config.true 'pasv_addr_resolve'; then
+        echo 'pasv_addr_resolve=YES' >> "${CONFIG}"
+    fi
 else
     echo 'pasv_enable=NO' >> "${CONFIG}"
 fi
