@@ -61,6 +61,7 @@
     "pasv_min_port": "port",
     "pasv_max_port": "port",
     "pasv_address": "str",
+    "pasv_addr_resolve": "bool?",
     "ssl": "bool",
     "certfile": "str",
     "keyfile": "str",
