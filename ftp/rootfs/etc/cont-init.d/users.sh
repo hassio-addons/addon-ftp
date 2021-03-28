@@ -14,7 +14,7 @@ for user in $(bashio::config 'users|keys'); do
 
     for dir in "addons" "backup" "config" "media" "share" "ssl"; do
         if bashio::config.true "users[${user}].${dir}"; then
-            mkdir "/ftproot/users/${username}/${dir}"
+            mkdir -p "/ftproot/users/${username}/${dir}"
             mount --bind "/${dir}" "/ftproot/users/${username}/${dir}"
         fi
     done
