@@ -22,7 +22,7 @@ RUN \
     && cd - \
     \
     && apk add --no-cache \
-        openssl=1.1.1k-r0 \
+        openssl=1.1.1l-r0 \
         vsftpd=3.0.4-r0 \
     \
     && apk del --no-cache --purge .build-dependencies \
