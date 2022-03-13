@@ -4,6 +4,7 @@ version: dev
 slug: ftp
 description: A secure and fast FTP server for Home Assistant
 url: https://github.com/hassio-addons/addon-ftp
+codenotary: codenotary@frenck.dev
 startup: services
 arch:
   - aarch64
