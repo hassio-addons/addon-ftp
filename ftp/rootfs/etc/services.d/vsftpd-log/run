@@ -5,4 +5,4 @@
 # ==============================================================================
 bashio::log.info "Starting Log tailer..."
 touch /var/log/vsftpd.log
-tail -n0 -F /var/log/vsftpd.log
+exec tail -n0 -F /var/log/vsftpd.log
