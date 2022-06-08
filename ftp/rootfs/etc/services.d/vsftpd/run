@@ -4,7 +4,7 @@
 # Runs vsftpd (IPv4)
 # ==============================================================================
 # Wait for vsftpd-log to be started
-s6-svwait -u -t 5000 /var/run/s6/services/vsftpd-log
+s6-svwait -u -t 5000 /run/service/vsftpd-log
 
 bashio::log.info "Starting FTP server..."
 
