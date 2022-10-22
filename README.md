@@ -34,7 +34,7 @@ While FTP is not entirely secure by its (unencrypted) nature, this add-on
 supports FTP over SSL (FTPS) and jails (chroot) the virtual users in their
 home directories.
 
-Of course, if you'd really want to, you could also use this add-on to again
+Of course, if you'd really want to, you could also use this add-on to gain
 access to your Home Assistant configuration via FTP.
 
 [:books: Read the full add-on documentation][docs]
