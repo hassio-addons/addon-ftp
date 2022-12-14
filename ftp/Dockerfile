@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.6
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:13.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,10 +9,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=11.2.1_git20220219-r2 \
-        linux-pam-dev=1.5.2-r0 \
-        make=4.3-r0 \
-        musl-dev=1.2.3-r1 \
+        gcc=12.2.1_git20220924-r4 \
+        linux-pam-dev=1.5.2-r1 \
+        make=4.3-r1 \
+        musl-dev=1.2.3-r4 \
     \
     && cd /tmp \
     && curl -sSL https://github.com/tiwe-de/libpam-pwdfile/archive/v1.0.tar.gz \
@@ -22,8 +22,8 @@ RUN \
     && cd - \
     \
     && apk add --no-cache \
-        openssl=1.1.1s-r0 \
-        vsftpd=3.0.5-r1 \
+        openssl=3.0.7-r0 \
+        vsftpd=3.0.5-r2 \
     \
     && apk del --no-cache --purge .build-dependencies \
     \
