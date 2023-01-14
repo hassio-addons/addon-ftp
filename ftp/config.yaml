@@ -50,6 +50,7 @@ options:
       media: true
       share: true
       ssl: false
+      chroot_to_share: false
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   port: port
@@ -78,4 +79,5 @@ schema:
       media: bool
       share: bool
       ssl: bool
+      chroot_to_share: bool
   i_like_to_be_pwned: bool?

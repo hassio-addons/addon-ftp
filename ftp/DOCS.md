@@ -224,6 +224,10 @@ Allow the user to access the `/share` directory.
 
 Allow the user to access the `/ssl` directory.
 
+#### Sub-option: `chroot_to_share`
+
+Allow the user to have its root set to the `/share` directory (for instance, useful for cameras which do not permit to specify a folder to upload screenshots).
+
 ### Option: `i_like_to_be_pwned`
 
 Adding this option to the add-on configuration allows to you bypass the

@@ -20,6 +20,10 @@ for user in $(bashio::config 'users|keys'); do
         fi
     done
 
+    if bashio::config.true "users[${user}].chroot_to_share"; then
+        mount --bind "/share" "/ftproot/users/${username}"
+    fi
+
     if bashio::config.true "users[${user}].allow_chmod"; then
         echo 'chmod_enable=YES' >> "/etc/vsftpd/users/${username}"
     fi
