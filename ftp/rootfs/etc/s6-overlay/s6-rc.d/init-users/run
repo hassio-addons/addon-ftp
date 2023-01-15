@@ -13,15 +13,16 @@ for user in $(bashio::config 'users|keys'); do
     mkdir -p "/ftproot/users/${username}"
     touch "/etc/vsftpd/users/${username}"
 
-    for dir in "addons" "backup" "config" "media" "share" "ssl"; do
-        if bashio::config.true "users[${user}].${dir}"; then
-            mkdir "/ftproot/users/${username}/${dir}"
-            mount --rbind "/${dir}" "/ftproot/users/${username}/${dir}"
-        fi
-    done
-
-    if bashio::config.true "users[${user}].chroot_to_share"; then
-        mount --bind "/share" "/ftproot/users/${username}"
+    if ! bashio::config.equals "users[${user}].chroot" "none"; then
+        chroot=$(bashio::config "users[${user}].chroot")
+        mount --rbind "/${chroot}" "/ftproot/users/${username}"
+    else
+        for dir in "addons" "backup" "config" "media" "share" "ssl"; do
+            if bashio::config.true "users[${user}].${dir}"; then
+                mkdir "/ftproot/users/${username}/${dir}"
+                mount --rbind "/${dir}" "/ftproot/users/${username}/${dir}"
+            fi
+        done
     fi
 
     if bashio::config.true "users[${user}].allow_chmod"; then

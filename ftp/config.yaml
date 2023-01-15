@@ -1,10 +1,10 @@
 ---
-name: FTP
-version: dev
-slug: ftp
-description: A secure and fast FTP server for Home Assistant
-url: https://github.com/hassio-addons/addon-ftp
-codenotary: codenotary@frenck.dev
+name: HugoKs3 FTP
+version: dev-2
+slug: hugoks3-ftp
+description: My own FTP Server
+url: https://github.com/hugoKs3/addon-ftp
+codenotary: hugo@questroy.com
 startup: services
 arch:
   - aarch64
@@ -27,7 +27,7 @@ map:
 options:
   port: 21
   data_port: 20
-  banner: Welcome to the Hass.io FTP service.
+  banner: Welcome to the HugoKs3 FTP service.
   pasv: true
   pasv_min_port: 30000
   pasv_max_port: 30010
@@ -50,7 +50,7 @@ options:
       media: true
       share: true
       ssl: false
-      chroot_to_share: false
+      chroot: none
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   port: port
@@ -79,5 +79,5 @@ schema:
       media: bool
       share: bool
       ssl: bool
-      chroot_to_share: bool
+      chroot: list(none|addons|config|media|share|ssl)?
   i_like_to_be_pwned: bool?

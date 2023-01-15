@@ -59,6 +59,7 @@ users:
     media: true
     share: true
     ssl: false
+    chroot: none
   - username: camera
     password: changeme
     allow_chmod: false
@@ -69,8 +70,9 @@ users:
     backup: false
     config: false
     media: false
-    share: true
+    share: false
     ssl: false
+    chroot: share
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
@@ -224,9 +226,19 @@ Allow the user to access the `/share` directory.
 
 Allow the user to access the `/ssl` directory.
 
-#### Sub-option: `chroot_to_share`
+#### Sub-option: `chroot`
 
-Allow the user to have its root set to the `/share` directory (for instance, useful for cameras which do not permit to specify a folder to upload screenshots).
+Allow the user to have its root set to the specified directory (for instance, useful for cameras which do not permit to specify a folder to upload screenshots).
+
+Allowed values are:
+- `none`: No specific chroot for this user
+- `addons`: Chroot user to `addons`
+- `config`: Chroot user to `config`
+- `media`: Chroot user to `media`
+- `share`: Chroot user to `share`
+- `ssl`: Chroot user to `ssl`
+
+Note: when setting this option to something else than `none`, the previous options to mount directories will be ignored.
 
 ### Option: `i_like_to_be_pwned`
 
