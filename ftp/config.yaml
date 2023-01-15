@@ -1,10 +1,10 @@
 ---
-name: HugoKs3 FTP
-version: dev-2
-slug: hugoks3-ftp
-description: My own FTP Server
-url: https://github.com/hugoKs3/addon-ftp
-codenotary: hugo@questroy.com
+name: FTP
+version: dev
+slug: ftp
+description: A secure and fast FTP server for Home Assistant
+url: https://github.com/hassio-addons/addon-ftp
+codenotary: codenotary@frenck.dev
 startup: services
 arch:
   - aarch64
