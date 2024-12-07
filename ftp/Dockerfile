@@ -9,10 +9,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        gcc=13.2.1_git20240309-r0 \
-        linux-pam-dev=1.6.0-r0 \
+        gcc=14.2.0-r4 \
+        linux-pam-dev=1.6.1-r1 \
         make=4.4.1-r2 \
-        musl-dev=1.2.5-r0 \
+        musl-dev=1.2.5-r8 \
     \
     && cd /tmp \
     && curl -sSL https://github.com/tiwe-de/libpam-pwdfile/archive/v1.0.tar.gz \
@@ -22,7 +22,7 @@ RUN \
     && cd - \
     \
     && apk add --no-cache \
-        openssl=3.3.2-r1 \
+        openssl=3.3.2-r4 \
         vsftpd=3.0.5-r2 \
     \
     && apk del --no-cache --purge .build-dependencies \
