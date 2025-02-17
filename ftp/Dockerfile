@@ -18,7 +18,7 @@ RUN \
     && curl -sSL https://github.com/tiwe-de/libpam-pwdfile/archive/v1.0.tar.gz \
         | tar xz --strip 1 \
     && make \
-    && make install \
+    && PAM_LIB_DIR=/usr/lib/security make install \
     && cd - \
     \
     && apk add --no-cache \
