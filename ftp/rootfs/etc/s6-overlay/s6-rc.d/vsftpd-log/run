@@ -1,6 +1,7 @@
 #!/command/with-contenv bashio
+# shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: FTP
+# Home Assistant Community App: FTP
 # Catches output from vsFTPd server
 # ==============================================================================
 bashio::log.info "Starting Log tailer..."

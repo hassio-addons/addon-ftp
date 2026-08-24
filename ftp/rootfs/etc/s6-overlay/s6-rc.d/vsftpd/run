@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: FTP
+# Home Assistant Community App: FTP
 # Runs vsftpd (IPv4)
 # ==============================================================================
 # Wait for vsftpd-log to be started
