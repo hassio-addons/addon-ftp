@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: FTP
+# Home Assistant Community App: FTP
 # Configures vsftpd
 # ==============================================================================
 readonly CONFIG=/etc/vsftpd/vsftpd.conf
